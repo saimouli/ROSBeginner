@@ -57,10 +57,10 @@ def publish_transforms():
     q_co= transformations.quaternion_multiply(iq32,q1)
     rot= transformations.quaternion_matrix(q_co)
     #rot= transformations.quaternion_matrix(q_co)
-    camera_transform.transform.rotation.x = q_co[0]#q3[0]
-    camera_transform.transform.rotation.y = q_co[1]
-    camera_transform.transform.rotation.z = q_co[2]
-    camera_transform.transform.rotation.w = q_c0[3]
+    camera_transform.transform.rotation.x = q_co[0] # this will make the same as camera
+    camera_transform.transform.rotation.y = q_co[1] # to point camera x-axis to the origin of the object, get the translation component
+    camera_transform.transform.rotation.z = q_co[2] # of the object from camera frame. This is the p we want q_co's x-axis to point to 
+    camera_transform.transform.rotation.w = q_c0[3] # by normalizing and doting this with rot. we get the vec. pointing in the p dir.
     br.sendTransform(camera_transform)
     
 
