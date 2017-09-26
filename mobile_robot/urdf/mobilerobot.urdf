@@ -1,0 +1,16 @@
+<?xml version ='1.0'?>
+<?xml version='1.0'?>
+<robot name="dd_robot">
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.10938" radius="0.178">
+      </geometry>
+    </visual>
+  </link>
+
+</robot>
+
