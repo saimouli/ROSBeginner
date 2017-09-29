@@ -1,4 +1,5 @@
 <launch>
+<!--  roslaunch mobile_robot mobilerobot_rviz.launch model:=mobilerobot.urdf-->
    <!-- values passed by command line input -->     
    <arg name="model" />
    <arg name="gui" default="False" />
