@@ -22,6 +22,6 @@
   <param name="mobilerobot_description" command="$(find xacro)/xacro.py '$(find mobilerobot_description)/urdf/mobilerobot.xacro'"/>
 
   <node name="mobilerobot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
-   args="-urdf -param robot_description -model mobilerobot" />
+   args="-urdf -param mobilerobot_description -model mobilerobot" />
 
 </launch>
